@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fab_material_white">
+
+    <com.elvis.shopping.list.view.MyTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center" />
+
+    <com.elvis.shopping.list.view.MySingleButton
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ok_btn"
+        android:textColor="@color/fab_material_green_900"
+        android:layout_below="@+id/text"
+        android:background="@drawable/btn_bg"
+        android:layout_margin="1dp" />
+
+</RelativeLayout>

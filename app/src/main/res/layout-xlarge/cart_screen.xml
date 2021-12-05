@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe3d7f4"
+    android:id="@+id/principal_cart">
+
+    <TableRow
+        android:id="@+id/tabRowAdView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tabShowCartContent"
+        android:layout_below="@+id/tabRowAdView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.elvis.shopping.list.view.MyTextView
+            android:id="@+id/showCart"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center"
+            android:textSize="18sp"
+            android:textColor="#ff9370db"/>
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/containerAddProductData"
+        android:layout_below="@+id/tabShowCartContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRowAddCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowAddProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowAddProductData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/titlesTableRow"
+        android:layout_below="@+id/containerAddProductData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--com.elvis.shopping.list.view.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:textSize="23sp"
+            android:gravity="center_vertical|start"
+            android:text="@string/products_text"
+            android:textColor="#ff00008b"/>
+        <com.elvis.shopping.list.view.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:gravity="center_vertical|center"
+            android:text="@string/quant_text"
+            android:textColor="#ff00008b"/>
+        <com.elvis.shopping.list.view.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:gravity="center_vertical|center"
+            android:text="@string/price_text"
+            android:textColor="#ff00008b"/>
+        <com.elvis.shopping.list.view.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:gravity="center_vertical|center"
+            android:text="@string/total_text"
+            android:textColor="#ff00008b"/-->
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_below="@+id/titlesTableRow"
+        android:layout_above="@+id/tableRowTotal"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:id="@+id/products_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/tableRowTotal"
+        android:layout_above="@+id/tableRowDown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.elvis.shopping.list.view.MyTextView
+            android:id="@+id/textViewTotalText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:text="@string/total_shop"
+            android:textColor="#ff00008b"/>
+        <com.elvis.shopping.list.view.MyTextView
+            android:id="@+id/totalDaCompraText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textColor="#ff00008b"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent_3"
+        android:gravity="center_vertical|center">
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/destroyBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_delete_bg" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/addBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_add_shopping_cart_bg" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_delete_item_bg" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/riskBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_strikethrough_bg" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/confirmBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_confirm_bg" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/btn_arrow_back_bg" />
+    </TableRow>
+
+</RelativeLayout>

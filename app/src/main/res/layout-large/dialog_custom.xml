@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fab_material_white">
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:textColor="@color/material_black_grey" />
+
+    <TableRow
+        android:layout_below="@+id/dialogText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/fab_material_green_900"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="1dp" />
+
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/dialogButtonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_no"
+            android:textColor="@color/fab_material_red_900"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp" />
+    </TableRow>
+
+</RelativeLayout>

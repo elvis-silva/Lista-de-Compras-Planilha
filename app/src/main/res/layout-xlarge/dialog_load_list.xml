@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.elvis.shopping.list.view.MySingleButton
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/carregar_text"
+        android:textColor="@color/material_black_grey"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_bg"
+        android:layout_margin="1dp" />
+    <com.elvis.shopping.list.view.MySingleButton
+        android:id="@+id/btnRename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/renomear_text"
+        android:textColor="@color/material_black_grey"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp" />
+    <com.elvis.shopping.list.view.MySingleButton
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remover_text"
+        android:textColor="@color/material_black_grey"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp" />
+    <com.elvis.shopping.list.view.MySingleButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar_text"
+        android:textColor="@color/fab_material_red_900"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp" />
+</LinearLayout>

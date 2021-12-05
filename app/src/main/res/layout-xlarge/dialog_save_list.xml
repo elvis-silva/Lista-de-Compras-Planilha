@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fab_material_white">
+
+    <com.elvis.shopping.list.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/fab_material_blue_grey_900"
+        android:textStyle="bold"
+        android:text="@string/write_list_name_title"/>
+
+    <com.elvis.shopping.list.view.MyEditText
+        android:id="@+id/nameSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:textSize="20sp"
+        android:textColor="@color/material_black_grey"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/confirmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save_text"
+            android:textColor="@color/fab_material_green_900"
+            android:background="@drawable/btn_bg"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:layout_margin="1dp"
+            android:layout_weight="1"/>
+        <com.elvis.shopping.list.view.MySingleButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/fab_material_red_900"
+            android:background="@drawable/btn_bg"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp" />
+    </TableRow>
+
+</LinearLayout>

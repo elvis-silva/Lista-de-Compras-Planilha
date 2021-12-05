@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:title="@string/main_menu_screens" >
+            <menu>
+                <item
+                    android:id="@+id/nav_section_current"
+                    android:title="@string/title_section_current"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/nav_section_my_lists"
+                    android:title="@string/title_section_my_lists"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/nav_section_my_pantry"
+                    android:title="@string/title_section_my_pantry"
+                    android:checkable="true" />
+                <item
+                    android:id="@+id/nav_section_setup"
+                    android:title="@string/title_section_setup"
+                    android:checkable="true"/>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/more">
+            <menu>
+                <item
+                    android:title="@string/more_apps"
+                    android:onClick="openDevPage"/>
+                <item
+                    android:title="@string/action_rate"
+                    android:onClick="rateMe"/>
+            </menu>
+        </item>
+    </group>
+</menu>
